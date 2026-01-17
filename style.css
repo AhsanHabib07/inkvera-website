@@ -1,125 +1,108 @@
-/* RESET & BASE */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  color: #222;
+  color: #1f2937;
   background: #ffffff;
 }
 
-/* =====================
-   NAVBAR (COZY & PRO)
-===================== */
+/* NAVBAR */
 .navbar {
   position: fixed;
-  width: 100%;
   top: 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(8px);
+  width: 100%;
+  padding: 20px 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 70px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-  z-index: 100;
+  background: white;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.06);
+  z-index: 1000;
 }
 
 .logo {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 700;
-  letter-spacing: 1.8px;
+  color: #2563eb;
 }
 
 nav a {
   margin-left: 30px;
   text-decoration: none;
-  color: #444;
+  color: #374151;
   font-weight: 500;
-  font-size: 15px;
-  transition: color 0.2s ease;
+  font-size: 16px;
 }
 
-nav a:hover {
-  color: #000;
-}
-
-.upload-nav {
-  color: #111;
-  background: #ffcc00;
-  padding: 9px 18px;
+.nav-cta {
+  background: #2563eb;
+  color: white;
+  padding: 10px 20px;
   border-radius: 999px;
   font-weight: 600;
-  font-size: 14px;
 }
 
-/* =====================
-   HERO SECTION
-===================== */
+/* HERO */
 .hero {
   height: 100vh;
-  background: linear-gradient(
-    rgba(0,0,0,0.55),
-    rgba(0,0,0,0.55)
-  ),
-  url("https://images.unsplash.com/photo-1581090700227-1e37b190418e");
+  background:
+    linear-gradient(rgba(37,99,235,0.65), rgba(37,99,235,0.65)),
+    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
-  padding: 0 70px;
+  padding: 0 80px;
 }
 
 .hero-content {
-  max-width: 600px;
+  max-width: 650px;
   color: white;
 }
 
 .hero h1 {
-  font-size: 52px;
+  font-size: 64px;
   font-weight: 700;
+  line-height: 1.1;
   margin-bottom: 20px;
-  line-height: 1.15;
 }
 
 .hero p {
-  font-size: 18px;
-  margin-bottom: 30px;
-  opacity: 0.95;
+  font-size: 20px;
+  margin-bottom: 35px;
 }
 
-.cta-button {
+.hero-btn {
   display: inline-block;
-  background: #ffcc00;
-  color: #111;
-  padding: 15px 32px;
+  background: #facc15;
+  color: #1f2937;
+  padding: 16px 36px;
+  border-radius: 999px;
+  font-size: 18px;
   font-weight: 600;
   text-decoration: none;
-  border-radius: 999px;
-  font-size: 16px;
 }
 
-/* =====================
-   HOW IT WORKS
-===================== */
+/* HOW IT WORKS */
 .how {
-  padding: 110px 70px;
+  padding: 120px 80px;
   text-align: center;
 }
 
 .how h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 60px;
+  font-size: 44px;
+  margin-bottom: 70px;
 }
 
 .steps {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 60px;
 }
 
 .step {
@@ -128,55 +111,52 @@ nav a:hover {
 
 .step span {
   display: inline-block;
-  background: #111;
+  background: #2563eb;
   color: white;
-  width: 44px;
-  height: 44px;
-  line-height: 44px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   border-radius: 50%;
   font-weight: 600;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .step h3 {
-  font-size: 18px;
-  margin-bottom: 8px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .step p {
-  font-size: 15px;
-  color: #555;
+  font-size: 16px;
+  color: #4b5563;
 }
 
-/* =====================
-   UPLOAD SECTION
-===================== */
+/* UPLOAD */
 .upload {
-  background: #f8f8f8;
-  padding: 110px 70px;
+  background: #f9fafb;
+  padding: 120px 80px;
   text-align: center;
 }
 
 .upload h2 {
-  font-size: 34px;
-  font-weight: 700;
+  font-size: 42px;
   margin-bottom: 10px;
 }
 
 .upload p {
-  color: #555;
-  margin-bottom: 30px;
+  font-size: 16px;
+  color: #6b7280;
 }
 
 .upload-box {
-  margin-top: 20px;
+  margin-top: 30px;
   display: inline-flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
   background: white;
-  padding: 30px;
-  border-radius: 14px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
 }
 
 .upload input {
@@ -185,54 +165,44 @@ nav a:hover {
 
 .upload button {
   padding: 14px;
-  background: #111;
+  background: #2563eb;
   color: white;
   border: none;
-  cursor: pointer;
-  font-size: 15px;
-  border-radius: 8px;
+  border-radius: 10px;
+  font-size: 16px;
   font-weight: 600;
+  cursor: pointer;
 }
 
-/* =====================
-   CONTACT
-===================== */
+/* CONTACT */
 .contact {
-  padding: 90px 70px;
+  padding: 100px 80px;
   text-align: center;
 }
 
 .contact h2 {
-  font-size: 32px;
+  font-size: 38px;
   margin-bottom: 15px;
 }
 
 .contact p {
-  color: #555;
+  color: #6b7280;
+  font-size: 16px;
 }
 
-/* =====================
-   FOOTER
-===================== */
+/* FOOTER */
 footer {
-  background: #111;
+  background: #1f2937;
   color: white;
   text-align: center;
-  padding: 22px;
+  padding: 25px;
   font-size: 14px;
 }
 
-/* =====================
-   RESPONSIVE (MOBILE)
-===================== */
+/* MOBILE */
 @media (max-width: 768px) {
   .navbar {
     padding: 16px 20px;
-  }
-
-  nav a {
-    margin-left: 16px;
-    font-size: 14px;
   }
 
   .hero {
@@ -241,7 +211,7 @@ footer {
   }
 
   .hero h1 {
-    font-size: 36px;
+    font-size: 42px;
   }
 
   .steps {
