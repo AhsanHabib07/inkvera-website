@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  color: #222;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.upload-nav {
+  color: white;
+  background: #000;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)
+  ),
+  url("https://images.unsplash.com/photo-1581090700227-1e37b190418e");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.hero-content {
+  max-width: 600px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #ffcc00;
+  color: black;
+  padding: 15px 30px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+/* HOW IT WORKS */
+.how {
+  padding: 100px 60px;
+  text-align: center;
+}
+
+.how h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.step {
+  max-width: 250px;
+}
+
+.step span {
+  display: inline-block;
+  background: black;
+  color: white;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* UPLOAD */
+.upload {
+  background: #f8f8f8;
+  padding: 100px 60px;
+  text-align: center;
+}
+
+.upload-box {
+  margin-top: 30px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.upload input {
+  padding: 12px;
+}
+
+.upload button {
+  padding: 14px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* CONTACT */
+.contact {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
